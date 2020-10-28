@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="main">
     <file>home_default.png</file>
+    <file>bg_larger.png</file>
     <file>home_disabled.png</file>
     <file>home_selected.png</file>
     <file>inicio_default.png</file>

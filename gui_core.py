@@ -22,6 +22,7 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1024, 600)
+        MainWindow.setStyleSheet(u"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"QFrame {\n"
@@ -40,15 +41,15 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.calib = QFrame(self.frame)
         self.calib.setObjectName(u"calib")
-        self.calib.setGeometry(QRect(191, 0, 833, 600))
+        self.calib.setGeometry(QRect(0, 0, 1024, 600))
         self.calib.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
+"	background-image: url(:/main/bg_larger.png);\n"
 "};")
         self.calib.setFrameShape(QFrame.StyledPanel)
         self.calib.setFrameShadow(QFrame.Raised)
         self.frame_14 = QFrame(self.calib)
         self.frame_14.setObjectName(u"frame_14")
-        self.frame_14.setGeometry(QRect(10, 0, 811, 601))
+        self.frame_14.setGeometry(QRect(106, 0, 811, 601))
         self.frame_14.setStyleSheet(u"QFrame {\n"
 "	background-color: none;\n"
 "};")
@@ -508,15 +509,15 @@ class Ui_MainWindow(object):
 
         self.comunication = QFrame(self.frame)
         self.comunication.setObjectName(u"comunication")
-        self.comunication.setGeometry(QRect(191, 0, 833, 600))
+        self.comunication.setGeometry(QRect(0, 0, 1024, 600))
         self.comunication.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
+"	background-image: url(:/main/bg_larger.png);\n"
 "};")
         self.comunication.setFrameShape(QFrame.StyledPanel)
         self.comunication.setFrameShadow(QFrame.Raised)
         self.frame_13 = QFrame(self.comunication)
         self.frame_13.setObjectName(u"frame_13")
-        self.frame_13.setGeometry(QRect(120, 150, 601, 301))
+        self.frame_13.setGeometry(QRect(212, 150, 600, 300))
         self.frame_13.setStyleSheet(u"QFrame {\n"
 "	background: none;\n"
 "};")
@@ -608,15 +609,15 @@ class Ui_MainWindow(object):
 
         self.config = QFrame(self.frame)
         self.config.setObjectName(u"config")
-        self.config.setGeometry(QRect(191, 0, 833, 600))
+        self.config.setGeometry(QRect(0, 0, 1024, 600))
         self.config.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
+"	background-image: url(:/main/bg_larger.png);\n"
 "};")
         self.config.setFrameShape(QFrame.StyledPanel)
         self.config.setFrameShadow(QFrame.Raised)
         self.frame_7 = QFrame(self.config)
         self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setGeometry(QRect(60, 80, 721, 431))
+        self.frame_7.setGeometry(QRect(152, 85, 720, 430))
         self.frame_7.setStyleSheet(u"QFrame {\n"
 "	background: none;\n"
 "};")
@@ -820,15 +821,15 @@ class Ui_MainWindow(object):
 
         self.keyboard = QFrame(self.frame)
         self.keyboard.setObjectName(u"keyboard")
-        self.keyboard.setGeometry(QRect(191, 0, 833, 600))
+        self.keyboard.setGeometry(QRect(0, 0, 1024, 600))
         self.keyboard.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
+"	background-image: url(:/main/bg_larger.png);\n"
 "};")
         self.keyboard.setFrameShape(QFrame.StyledPanel)
         self.keyboard.setFrameShadow(QFrame.Raised)
         self.frame_15 = QFrame(self.keyboard)
         self.frame_15.setObjectName(u"frame_15")
-        self.frame_15.setGeometry(QRect(90, 50, 661, 481))
+        self.frame_15.setGeometry(QRect(182, 60, 660, 480))
         self.frame_15.setStyleSheet(u"QFrame {\n"
 "	background: none;\n"
 "	background-color: rgb(23, 23, 23);\n"
@@ -1088,18 +1089,19 @@ class Ui_MainWindow(object):
 
         self.main = QFrame(self.frame)
         self.main.setObjectName(u"main")
-        self.main.setGeometry(QRect(191, 0, 833, 600))
+        self.main.setGeometry(QRect(0, 0, 1024, 600))
         font5 = QFont()
         font5.setPointSize(6)
         self.main.setFont(font5)
         self.main.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
-"};")
+"	background-image: url(:/main/bg_larger.png);\n"
+"	background-color:rgb(32, 32, 32);\n"
+"}")
         self.main.setFrameShape(QFrame.StyledPanel)
         self.main.setFrameShadow(QFrame.Raised)
         self.frame_2 = QFrame(self.main)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(130, 40, 581, 521))
+        self.frame_2.setGeometry(QRect(320, 40, 581, 521))
         self.frame_2.setStyleSheet(u"QFrame {\n"
 "	background: none;\n"
 "};")
@@ -1403,69 +1405,232 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.main_test_button, 0, Qt.AlignRight)
 
+        self.left_bar = QFrame(self.main)
+        self.left_bar.setObjectName(u"left_bar")
+        self.left_bar.setGeometry(QRect(0, 0, 200, 600))
+        self.left_bar.setStyleSheet(u"background: rgb(44, 43, 43);")
+        self.verticalLayoutWidget = QWidget(self.left_bar)
+        self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
+        self.verticalLayoutWidget.setGeometry(QRect(0, 0, 202, 601))
+        self.verticalLayout = QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalSpacer_6 = QSpacerItem(20, 4, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout.addItem(self.verticalSpacer_6)
+
+        self.widget = QWidget(self.verticalLayoutWidget)
+        self.widget.setObjectName(u"widget")
+        self.widget.setMinimumSize(QSize(200, 60))
+        self.widget.setMaximumSize(QSize(200, 60))
+        self.widget.setStyleSheet(u"QWidget{\n"
+"	background-color: rgb(143, 38, 38);\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 2px solid rgb(143, 38, 38);\n"
+"}\n"
+"\n"
+"QComboBox QAbstractItemView {\n"
+"    selection-background-color: rgb(64, 64, 64);\n"
+"    background-color: rgb(32,32,32);\n"
+"}")
+        self.main_scale_select = QComboBox(self.widget)
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.addItem("")
+        self.main_scale_select.setObjectName(u"main_scale_select")
+        self.main_scale_select.setGeometry(QRect(0, 30, 200, 30))
+        self.main_scale_select.setMinimumSize(QSize(200, 30))
+        self.main_scale_select.setMaximumSize(QSize(200, 30))
+        font9 = QFont()
+        font9.setPointSize(20)
+        font9.setBold(True)
+        font9.setUnderline(False)
+        font9.setWeight(75)
+        font9.setKerning(True)
+        self.main_scale_select.setFont(font9)
+        self.main_scale_select.setFocusPolicy(Qt.NoFocus)
+        self.main_scale_select.setStyleSheet(u"QComboBox {\n"
+"	margin-top: -5px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(143, 38, 38);\n"
+"	border: 1px solid  rgb(143, 38, 38);\n"
+"    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    width: 150px;\n"
+"    border:0px; /* This seems to replace the whole arrow of the combo box */\n"
+"    margin-right:-200px;\n"
+"	 margin-left: -65px;\n"
+"}\n"
+"\n"
+"")
+        self.main_scale_select.setMaxVisibleItems(9)
+        self.main_scale_select.setFrame(False)
+        self.label_25 = QLabel(self.widget)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setGeometry(QRect(0, 0, 200, 30))
+        self.label_25.setMinimumSize(QSize(200, 30))
+        self.label_25.setMaximumSize(QSize(200, 30))
+        font10 = QFont()
+        font10.setPointSize(15)
+        font10.setBold(True)
+        font10.setWeight(75)
+        self.label_25.setFont(font10)
+        self.label_25.setStyleSheet(u"QLabel{\n"
+"	background-color: rgb(32, 32, 32);/*rgb(143, 38, 38);*/\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 2px solid rgb(143, 38, 38);\n"
+"};")
+        self.label_25.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.verticalLayout.addWidget(self.widget)
+
+        self.widget_2 = QWidget(self.verticalLayoutWidget)
+        self.widget_2.setObjectName(u"widget_2")
+        self.widget_2.setMinimumSize(QSize(200, 60))
+        self.widget_2.setMaximumSize(QSize(200, 60))
+        self.widget_2.setStyleSheet(u"QWidget{\n"
+"	background-color: rgb(143, 38, 38);\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 2px solid rgb(143, 38, 38);\n"
+"}\n"
+"\n"
+"QComboBox QAbstractItemView {\n"
+"    selection-background-color: rgb(64, 64, 64);\n"
+"    background-color: rgb(32,32,32);\n"
+"}")
+        self.label_26 = QLabel(self.widget_2)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setGeometry(QRect(0, 0, 200, 30))
+        self.label_26.setMinimumSize(QSize(200, 30))
+        self.label_26.setMaximumSize(QSize(200, 30))
+        self.label_26.setFont(font10)
+        self.label_26.setStyleSheet(u"QLabel{\n"
+"	background-color: rgb(32, 32, 32);/*rgb(143, 38, 38);*/\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 2px solid rgb(143, 38, 38);\n"
+"};")
+        self.label_26.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.config_material_field = QComboBox(self.widget_2)
+        self.config_material_field.addItem("")
+        self.config_material_field.addItem("")
+        self.config_material_field.addItem("")
+        self.config_material_field.setObjectName(u"config_material_field")
+        self.config_material_field.setGeometry(QRect(0, 30, 200, 30))
+        self.config_material_field.setMinimumSize(QSize(200, 30))
+        self.config_material_field.setMaximumSize(QSize(200, 30))
+        self.config_material_field.setFont(font9)
+        self.config_material_field.setFocusPolicy(Qt.NoFocus)
+        self.config_material_field.setStyleSheet(u"QComboBox {\n"
+"	margin-top: -5px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(143, 38, 38);\n"
+"	border: 1px solid  rgb(143, 38, 38);\n"
+"    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    width: 150px;\n"
+"    border:0px; /* This seems to replace the whole arrow of the combo box */\n"
+"    margin-right:-200px;\n"
+"	 margin-left: -65px;\n"
+"}\n"
+"\n"
+"")
+        self.config_material_field.setMaxVisibleItems(9)
+        self.config_material_field.setFrame(False)
+
+        self.verticalLayout.addWidget(self.widget_2)
+
+        self.widget_3 = QWidget(self.verticalLayoutWidget)
+        self.widget_3.setObjectName(u"widget_3")
+        self.widget_3.setMinimumSize(QSize(200, 60))
+        self.widget_3.setMaximumSize(QSize(200, 60))
+        self.widget_3.setStyleSheet(u"QWidget{\n"
+"	background-color: rgb(143, 38, 38);\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 1px solid rgb(143, 38, 38);\n"
+"}")
+        self.label_27 = QLabel(self.widget_3)
+        self.label_27.setObjectName(u"label_27")
+        self.label_27.setGeometry(QRect(0, 0, 200, 30))
+        self.label_27.setMinimumSize(QSize(200, 30))
+        self.label_27.setMaximumSize(QSize(200, 30))
+        self.label_27.setFont(font10)
+        self.label_27.setStyleSheet(u"QLabel{\n"
+"	background-color: rgb(32, 32, 32);/*rgb(143, 38, 38);*/\n"
+"	color: rgb(255, 255, 255);\n"
+"	border: 2px solid rgb(143, 38, 38);\n"
+"};")
+        self.label_27.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.setup_actual_temp_field = QPushButton(self.widget_3)
+        self.setup_actual_temp_field.setObjectName(u"setup_actual_temp_field")
+        self.setup_actual_temp_field.setEnabled(True)
+        self.setup_actual_temp_field.setGeometry(QRect(0, 30, 200, 30))
+        self.setup_actual_temp_field.setMinimumSize(QSize(200, 30))
+        self.setup_actual_temp_field.setMaximumSize(QSize(200, 30))
+        self.setup_actual_temp_field.setFont(font1)
+        self.setup_actual_temp_field.setStyleSheet(u"QPushButton {\n"
+"	margin-top: -5px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(143, 38, 38);\n"
+"	border: 1px solid  rgb(143, 38, 38);\n"
+"    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */\n"
+"}")
+
+        self.verticalLayout.addWidget(self.widget_3)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer_5)
+
+        self.main_menu_button = QPushButton(self.verticalLayoutWidget)
+        self.main_menu_button.setObjectName(u"main_menu_button")
+        self.main_menu_button.setEnabled(True)
+        self.main_menu_button.setMaximumSize(QSize(60, 60))
+        icon = QIcon()
+        icon.addFile(u":/main/home_default.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/main/home_disabled.png", QSize(), QIcon.Disabled, QIcon.Off)
+        icon.addFile(u":/main/home_selected.png", QSize(), QIcon.Selected, QIcon.Off)
+        self.main_menu_button.setIcon(icon)
+        self.main_menu_button.setIconSize(QSize(60, 60))
+        self.main_menu_button.setCheckable(False)
+        self.main_menu_button.setChecked(False)
+        self.main_menu_button.setAutoDefault(False)
+        self.main_menu_button.setFlat(True)
+
+        self.verticalLayout.addWidget(self.main_menu_button, 0, Qt.AlignHCenter)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer_7)
+
         self.menu = QFrame(self.frame)
         self.menu.setObjectName(u"menu")
-        self.menu.setGeometry(QRect(191, 0, 833, 600))
+        self.menu.setGeometry(QRect(0, 0, 1024, 600))
         self.menu.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
+"	background-image: url(:/main/bg_larger.png);\n"
 "};")
         self.menu.setFrameShape(QFrame.StyledPanel)
         self.menu.setFrameShadow(QFrame.Raised)
-        self.horizontalLayoutWidget = QWidget(self.menu)
-        self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
-        self.horizontalLayoutWidget.setGeometry(QRect(0, 0, 831, 599))
-        self.horizontalLayout_2 = QHBoxLayout(self.horizontalLayoutWidget)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.frame_3 = QFrame(self.horizontalLayoutWidget)
-        self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setMinimumSize(QSize(200, 150))
-        self.frame_3.setMaximumSize(QSize(200, 150))
-        self.frame_3.setStyleSheet(u"background: #404040;\n"
-"border-radius: 15px;")
-        self.frame_3.setFrameShape(QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QFrame.Raised)
-        self.menu_config_button = QToolButton(self.frame_3)
-        self.menu_config_button.setObjectName(u"menu_config_button")
-        self.menu_config_button.setGeometry(QRect(0, 30, 201, 101))
-        self.menu_config_button.setMaximumSize(QSize(16777215, 16777215))
-        font9 = QFont()
-        font9.setPointSize(20)
-        font9.setBold(False)
-        font9.setWeight(50)
-        self.menu_config_button.setFont(font9)
-        self.menu_config_button.setStyleSheet(u"color: rgb(255, 255, 255);")
-        icon = QIcon()
-        icon.addFile(u":/main/config.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.menu_config_button.setIcon(icon)
-        self.menu_config_button.setIconSize(QSize(60, 60))
-        self.menu_config_button.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
-
-        self.horizontalLayout_2.addWidget(self.frame_3)
-
-        self.frame_4 = QFrame(self.horizontalLayoutWidget)
-        self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setMinimumSize(QSize(200, 150))
-        self.frame_4.setMaximumSize(QSize(200, 150))
-        self.frame_4.setStyleSheet(u"background: #404040;\n"
-"border-radius: 15px;")
-        self.frame_4.setFrameShape(QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QFrame.Raised)
-        self.menu_com_button = QToolButton(self.frame_4)
-        self.menu_com_button.setObjectName(u"menu_com_button")
-        self.menu_com_button.setGeometry(QRect(0, 30, 201, 101))
-        self.menu_com_button.setMaximumSize(QSize(16777215, 16777215))
-        self.menu_com_button.setFont(font9)
-        self.menu_com_button.setStyleSheet(u"color: rgb(255, 255, 255);")
-        icon1 = QIcon()
-        icon1.addFile(u":/main/comunicacao.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.menu_com_button.setIcon(icon1)
-        self.menu_com_button.setIconSize(QSize(60, 60))
-        self.menu_com_button.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
-
-        self.horizontalLayout_2.addWidget(self.frame_4)
-
-        self.frame_5 = QFrame(self.horizontalLayoutWidget)
+        self.gridLayoutWidget_7 = QWidget(self.menu)
+        self.gridLayoutWidget_7.setObjectName(u"gridLayoutWidget_7")
+        self.gridLayoutWidget_7.setGeometry(QRect(130, 120, 771, 361))
+        self.gridLayout_9 = QGridLayout(self.gridLayoutWidget_7)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.frame_5 = QFrame(self.gridLayoutWidget_7)
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setMinimumSize(QSize(200, 150))
         self.frame_5.setMaximumSize(QSize(200, 150))
@@ -1477,27 +1642,89 @@ class Ui_MainWindow(object):
         self.menu_calib_button.setObjectName(u"menu_calib_button")
         self.menu_calib_button.setGeometry(QRect(0, 30, 201, 101))
         self.menu_calib_button.setMaximumSize(QSize(16777215, 16777215))
-        self.menu_calib_button.setFont(font9)
+        font11 = QFont()
+        font11.setPointSize(20)
+        font11.setBold(False)
+        font11.setWeight(50)
+        self.menu_calib_button.setFont(font11)
         self.menu_calib_button.setStyleSheet(u"color: rgb(255, 255, 255);")
-        icon2 = QIcon()
-        icon2.addFile(u":/main/calib.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.menu_calib_button.setIcon(icon2)
+        icon1 = QIcon()
+        icon1.addFile(u":/main/calib.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.menu_calib_button.setIcon(icon1)
         self.menu_calib_button.setIconSize(QSize(60, 60))
         self.menu_calib_button.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
 
-        self.horizontalLayout_2.addWidget(self.frame_5)
+        self.gridLayout_9.addWidget(self.frame_5, 0, 2, 1, 1)
+
+        self.frame_4 = QFrame(self.gridLayoutWidget_7)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setMinimumSize(QSize(200, 150))
+        self.frame_4.setMaximumSize(QSize(200, 150))
+        self.frame_4.setStyleSheet(u"background: #404040;\n"
+"border-radius: 15px;")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.menu_com_button = QToolButton(self.frame_4)
+        self.menu_com_button.setObjectName(u"menu_com_button")
+        self.menu_com_button.setGeometry(QRect(0, 30, 201, 101))
+        self.menu_com_button.setMaximumSize(QSize(16777215, 16777215))
+        self.menu_com_button.setFont(font11)
+        self.menu_com_button.setStyleSheet(u"color: rgb(255, 255, 255);")
+        icon2 = QIcon()
+        icon2.addFile(u":/main/comunicacao.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.menu_com_button.setIcon(icon2)
+        self.menu_com_button.setIconSize(QSize(60, 60))
+        self.menu_com_button.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+
+        self.gridLayout_9.addWidget(self.frame_4, 0, 1, 1, 1)
+
+        self.frame_3 = QFrame(self.gridLayoutWidget_7)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setMinimumSize(QSize(200, 150))
+        self.frame_3.setMaximumSize(QSize(200, 150))
+        self.frame_3.setStyleSheet(u"background: #404040;\n"
+"border-radius: 15px;")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.menu_config_button = QToolButton(self.frame_3)
+        self.menu_config_button.setObjectName(u"menu_config_button")
+        self.menu_config_button.setGeometry(QRect(0, 30, 201, 101))
+        self.menu_config_button.setMaximumSize(QSize(16777215, 16777215))
+        self.menu_config_button.setFont(font11)
+        self.menu_config_button.setStyleSheet(u"color: rgb(255, 255, 255);")
+        icon3 = QIcon()
+        icon3.addFile(u":/main/config.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.menu_config_button.setIcon(icon3)
+        self.menu_config_button.setIconSize(QSize(60, 60))
+        self.menu_config_button.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+
+        self.gridLayout_9.addWidget(self.frame_3, 0, 0, 1, 1)
+
+        self.main_home_button = QPushButton(self.gridLayoutWidget_7)
+        self.main_home_button.setObjectName(u"main_home_button")
+        self.main_home_button.setEnabled(True)
+        self.main_home_button.setMinimumSize(QSize(0, 75))
+        self.main_home_button.setMaximumSize(QSize(200, 75))
+        self.main_home_button.setFont(font2)
+        self.main_home_button.setStyleSheet(u"background-color: #B5BD00;\n"
+"color: rgb(0,0,0);\n"
+"border: 1px solid #B5BD00;\n"
+"border-radius: 15px;")
+        self.main_home_button.setIconSize(QSize(25, 25))
+
+        self.gridLayout_9.addWidget(self.main_home_button, 1, 2, 1, 1)
 
         self.setup = QFrame(self.frame)
         self.setup.setObjectName(u"setup")
-        self.setup.setGeometry(QRect(191, 0, 833, 600))
+        self.setup.setGeometry(QRect(0, 0, 1024, 600))
         self.setup.setStyleSheet(u"QFrame {\n"
-"	background-image: url(:/main/bg.png);\n"
+"	background-image: url(:/main/bg_larger.png);\n"
 "};")
         self.setup.setFrameShape(QFrame.StyledPanel)
         self.setup.setFrameShadow(QFrame.Raised)
         self.frame_10 = QFrame(self.setup)
         self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setGeometry(QRect(60, 60, 721, 481))
+        self.frame_10.setGeometry(QRect(152, 60, 720, 480))
         self.frame_10.setStyleSheet(u"QFrame {\n"
 "	background: none;\n"
 "};")
@@ -1718,253 +1945,32 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.setup_stabilization_field, 4, 1, 1, 1)
 
-        self.left_bar = QFrame(self.frame)
-        self.left_bar.setObjectName(u"left_bar")
-        self.left_bar.setGeometry(QRect(0, 0, 190, 600))
-        self.left_bar.setStyleSheet(u"background-color:rgb(44, 43, 43);\n"
-"border-color: none;")
-        self.left_bar.setFrameShape(QFrame.StyledPanel)
-        self.left_bar.setFrameShadow(QFrame.Raised)
-        self.verticalLayoutWidget = QWidget(self.left_bar)
-        self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(0, 0, 191, 601))
-        self.verticalLayout = QVBoxLayout(self.verticalLayoutWidget)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.widget = QWidget(self.verticalLayoutWidget)
-        self.widget.setObjectName(u"widget")
-        self.widget.setMinimumSize(QSize(189, 60))
-        self.widget.setMaximumSize(QSize(189, 60))
-        self.widget.setStyleSheet(u"QWidget{\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(143, 38, 38);\n"
-"}")
-        self.label_25 = QLabel(self.widget)
-        self.label_25.setObjectName(u"label_25")
-        self.label_25.setGeometry(QRect(0, 0, 189, 30))
-        self.label_25.setMinimumSize(QSize(0, 30))
-        self.label_25.setMaximumSize(QSize(16777215, 30))
-        font10 = QFont()
-        font10.setPointSize(15)
-        font10.setBold(True)
-        font10.setWeight(75)
-        self.label_25.setFont(font10)
-        self.label_25.setStyleSheet(u"QLabel{\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(143, 38, 38);\n"
-"}")
-        self.label_25.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.main_scale_select = QComboBox(self.widget)
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.addItem("")
-        self.main_scale_select.setObjectName(u"main_scale_select")
-        self.main_scale_select.setGeometry(QRect(0, 30, 189, 30))
-        self.main_scale_select.setMinimumSize(QSize(189, 30))
-        self.main_scale_select.setMaximumSize(QSize(189, 30))
-        font11 = QFont()
-        font11.setPointSize(20)
-        font11.setBold(True)
-        font11.setUnderline(False)
-        font11.setWeight(75)
-        font11.setKerning(True)
-        self.main_scale_select.setFont(font11)
-        self.main_scale_select.setFocusPolicy(Qt.NoFocus)
-        self.main_scale_select.setStyleSheet(u"QComboBox {\n"
-"	margin-top: -5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	border: 1px solid  rgb(143, 38, 38);\n"
-"    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */\n"
-"}\n"
-"\n"
-"QComboBox::drop-down {\n"
-"    width: 150px;\n"
-"    border:0px; /* This seems to replace the whole arrow of the combo box */\n"
-"    margin-right:-200px;\n"
-"	 margin-left: -65px;\n"
-"}\n"
-"\n"
-"")
-        self.main_scale_select.setMaxVisibleItems(9)
-        self.main_scale_select.setFrame(False)
-
-        self.verticalLayout.addWidget(self.widget)
-
-        self.widget_2 = QWidget(self.verticalLayoutWidget)
-        self.widget_2.setObjectName(u"widget_2")
-        self.widget_2.setMinimumSize(QSize(189, 60))
-        self.widget_2.setMaximumSize(QSize(189, 60))
-        self.widget_2.setStyleSheet(u"QWidget{\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(143, 38, 38);\n"
-"}")
-        self.label_26 = QLabel(self.widget_2)
-        self.label_26.setObjectName(u"label_26")
-        self.label_26.setGeometry(QRect(0, 0, 189, 30))
-        self.label_26.setMinimumSize(QSize(0, 30))
-        self.label_26.setMaximumSize(QSize(16777215, 30))
-        self.label_26.setFont(font10)
-        self.label_26.setStyleSheet(u"QLabel{\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(143, 38, 38);\n"
-"}")
-        self.label_26.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.config_material_field = QComboBox(self.widget_2)
-        self.config_material_field.addItem("")
-        self.config_material_field.addItem("")
-        self.config_material_field.addItem("")
-        self.config_material_field.setObjectName(u"config_material_field")
-        self.config_material_field.setGeometry(QRect(0, 30, 189, 30))
-        self.config_material_field.setMinimumSize(QSize(189, 30))
-        self.config_material_field.setMaximumSize(QSize(189, 30))
-        self.config_material_field.setFont(font11)
-        self.config_material_field.setFocusPolicy(Qt.NoFocus)
-        self.config_material_field.setStyleSheet(u"QComboBox {\n"
-"	margin-top: -5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	border: 1px solid  rgb(143, 38, 38);\n"
-"    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */\n"
-"}\n"
-"\n"
-"QComboBox::drop-down {\n"
-"    width: 150px;\n"
-"    border:0px; /* This seems to replace the whole arrow of the combo box */\n"
-"    margin-right:-200px;\n"
-"	 margin-left: -65px;\n"
-"}\n"
-"\n"
-"")
-        self.config_material_field.setMaxVisibleItems(9)
-        self.config_material_field.setFrame(False)
-
-        self.verticalLayout.addWidget(self.widget_2)
-
-        self.widget_3 = QWidget(self.verticalLayoutWidget)
-        self.widget_3.setObjectName(u"widget_3")
-        self.widget_3.setMinimumSize(QSize(189, 60))
-        self.widget_3.setMaximumSize(QSize(189, 60))
-        self.widget_3.setStyleSheet(u"QWidget{\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(143, 38, 38);\n"
-"}")
-        self.label_27 = QLabel(self.widget_3)
-        self.label_27.setObjectName(u"label_27")
-        self.label_27.setGeometry(QRect(0, 0, 189, 30))
-        self.label_27.setMinimumSize(QSize(0, 30))
-        self.label_27.setMaximumSize(QSize(16777215, 30))
-        self.label_27.setFont(font10)
-        self.label_27.setStyleSheet(u"QLabel{\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border: 1px solid rgb(143, 38, 38);\n"
-"}")
-        self.label_27.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.setup_actual_temp_field = QPushButton(self.widget_3)
-        self.setup_actual_temp_field.setObjectName(u"setup_actual_temp_field")
-        self.setup_actual_temp_field.setEnabled(True)
-        self.setup_actual_temp_field.setGeometry(QRect(0, 30, 189, 30))
-        self.setup_actual_temp_field.setMinimumSize(QSize(189, 30))
-        self.setup_actual_temp_field.setMaximumSize(QSize(189, 30))
-        self.setup_actual_temp_field.setFont(font1)
-        self.setup_actual_temp_field.setStyleSheet(u"QPushButton {\n"
-"	margin-top: -5px;\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(143, 38, 38);\n"
-"	border: 1px solid  rgb(143, 38, 38);\n"
-"    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */\n"
-"}")
-
-        self.verticalLayout.addWidget(self.widget_3)
-
-        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.verticalLayout.addItem(self.verticalSpacer_5)
-
-        self.main_home_button = QPushButton(self.verticalLayoutWidget)
-        self.main_home_button.setObjectName(u"main_home_button")
-        self.main_home_button.setEnabled(True)
-        self.main_home_button.setMaximumSize(QSize(60, 60))
-        self.main_home_button.setStyleSheet(u"QPushButton:hover:!pressed\n"
-"{\n"
-"\n"
-"}")
-        icon3 = QIcon()
-        icon3.addFile(u":/main/inicio_default.png", QSize(), QIcon.Normal, QIcon.On)
-        icon3.addFile(u":/main/inicio_disabled.png", QSize(), QIcon.Disabled, QIcon.On)
-        icon3.addFile(u":/main/inicio_selected.png", QSize(), QIcon.Selected, QIcon.On)
-        self.main_home_button.setIcon(icon3)
-        self.main_home_button.setIconSize(QSize(60, 60))
-        self.main_home_button.setAutoDefault(False)
-        self.main_home_button.setFlat(True)
-
-        self.verticalLayout.addWidget(self.main_home_button, 0, Qt.AlignHCenter)
-
-        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.verticalLayout.addItem(self.verticalSpacer_6)
-
-        self.main_menu_button = QPushButton(self.verticalLayoutWidget)
-        self.main_menu_button.setObjectName(u"main_menu_button")
-        self.main_menu_button.setEnabled(True)
-        self.main_menu_button.setMaximumSize(QSize(60, 60))
-        icon4 = QIcon()
-        icon4.addFile(u":/main/home_default.png", QSize(), QIcon.Normal, QIcon.Off)
-        icon4.addFile(u":/main/home_disabled.png", QSize(), QIcon.Disabled, QIcon.Off)
-        icon4.addFile(u":/main/home_selected.png", QSize(), QIcon.Selected, QIcon.Off)
-        self.main_menu_button.setIcon(icon4)
-        self.main_menu_button.setIconSize(QSize(60, 60))
-        self.main_menu_button.setCheckable(False)
-        self.main_menu_button.setChecked(False)
-        self.main_menu_button.setAutoDefault(False)
-        self.main_menu_button.setFlat(True)
-
-        self.verticalLayout.addWidget(self.main_menu_button, 0, Qt.AlignHCenter)
-
-        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.verticalLayout.addItem(self.verticalSpacer_7)
-
-        self.menu.raise_()
-        self.left_bar.raise_()
-        self.keyboard.raise_()
         self.calib.raise_()
         self.comunication.raise_()
-        self.config.raise_()
+        self.keyboard.raise_()
         self.setup.raise_()
+        self.config.raise_()
+        self.menu.raise_()
         self.main.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.main_home_button.clicked.connect(self.main.raise_)
-        self.main_menu_button.clicked.connect(self.menu.raise_)
         self.menu_config_button.clicked.connect(self.config.raise_)
         self.menu_calib_button.clicked.connect(self.calib.raise_)
         self.menu_com_button.clicked.connect(self.comunication.raise_)
         self.calib_back_button.clicked.connect(self.menu.raise_)
         self.com_back_button.clicked.connect(self.menu.raise_)
         self.config_back_button.clicked.connect(self.menu.raise_)
+        self.main_home_button.clicked.connect(self.main.raise_)
+        self.main_menu_button.clicked.connect(self.menu.raise_)
 
         self.config_data_rate_field.setCurrentIndex(0)
         self.toolBox.setCurrentIndex(1)
-        self.setup_material_field.setCurrentIndex(0)
-        self.setup_data_rate_field.setCurrentIndex(0)
         self.main_scale_select.setCurrentIndex(0)
         self.config_material_field.setCurrentIndex(0)
-        self.main_home_button.setDefault(False)
         self.main_menu_button.setDefault(False)
+        self.setup_material_field.setCurrentIndex(0)
+        self.setup_data_rate_field.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2052,9 +2058,29 @@ class Ui_MainWindow(object):
         self.toolBox.setItemText(self.toolBox.indexOf(self.page_2), QCoreApplication.translate("MainWindow", u"Comparativo relativo", None))
         self.main_resistance_field.setText("")
         self.main_test_button.setText(QCoreApplication.translate("MainWindow", u"TESTAR", None))
-        self.menu_config_button.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00e3o", None))
-        self.menu_com_button.setText(QCoreApplication.translate("MainWindow", u"Comunica\u00e7\u00e3o", None))
+        self.main_scale_select.setItemText(0, QCoreApplication.translate("MainWindow", u"AUTORANGE", None))
+        self.main_scale_select.setItemText(1, QCoreApplication.translate("MainWindow", u"E1: 1,00m\u03a9", None))
+        self.main_scale_select.setItemText(2, QCoreApplication.translate("MainWindow", u"E2: 10,0m\u03a9", None))
+        self.main_scale_select.setItemText(3, QCoreApplication.translate("MainWindow", u"E3:  100m\u03a9", None))
+        self.main_scale_select.setItemText(4, QCoreApplication.translate("MainWindow", u"E4:    1,00\u03a9", None))
+        self.main_scale_select.setItemText(5, QCoreApplication.translate("MainWindow", u"E5:    10,0\u03a9", None))
+        self.main_scale_select.setItemText(6, QCoreApplication.translate("MainWindow", u"E6:     100\u03a9", None))
+        self.main_scale_select.setItemText(7, QCoreApplication.translate("MainWindow", u"E7:   1000\u03a9", None))
+        self.main_scale_select.setItemText(8, QCoreApplication.translate("MainWindow", u"E8: 10000\u03a9", None))
+
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"ESCALA:", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"COMPENSA\u00c7\u00c3O:", None))
+        self.config_material_field.setItemText(0, QCoreApplication.translate("MainWindow", u"NENHUMA", None))
+        self.config_material_field.setItemText(1, QCoreApplication.translate("MainWindow", u"COBRE", None))
+        self.config_material_field.setItemText(2, QCoreApplication.translate("MainWindow", u"ALUMINIO", None))
+
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"TEMPERATURA", None))
+        self.setup_actual_temp_field.setText(QCoreApplication.translate("MainWindow", u"25 \u00baC", None))
+        self.main_menu_button.setText("")
         self.menu_calib_button.setText(QCoreApplication.translate("MainWindow", u"Calibra\u00e7\u00e3o", None))
+        self.menu_com_button.setText(QCoreApplication.translate("MainWindow", u"Comunica\u00e7\u00e3o", None))
+        self.menu_config_button.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00e3o", None))
+        self.main_home_button.setText(QCoreApplication.translate("MainWindow", u"VOLTAR", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Numero de aquisi\u00e7\u00f5es", None))
         self.setup_material_field.setItemText(0, QCoreApplication.translate("MainWindow", u"Nenhum", None))
         self.setup_material_field.setItemText(1, QCoreApplication.translate("MainWindow", u"Cobre", None))
@@ -2073,25 +2099,5 @@ class Ui_MainWindow(object):
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Tempo de estabiliza\u00e7\u00e3o", None))
         self.setup_aquisitions_field.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.setup_stabilization_field.setText(QCoreApplication.translate("MainWindow", u"0.2 s", None))
-        self.label_25.setText(QCoreApplication.translate("MainWindow", u"ESCALA:", None))
-        self.main_scale_select.setItemText(0, QCoreApplication.translate("MainWindow", u"AUTORANGE", None))
-        self.main_scale_select.setItemText(1, QCoreApplication.translate("MainWindow", u"E1: 1,00m\u03a9", None))
-        self.main_scale_select.setItemText(2, QCoreApplication.translate("MainWindow", u"E2: 10,0m\u03a9", None))
-        self.main_scale_select.setItemText(3, QCoreApplication.translate("MainWindow", u"E3:  100m\u03a9", None))
-        self.main_scale_select.setItemText(4, QCoreApplication.translate("MainWindow", u"E4:    1,00\u03a9", None))
-        self.main_scale_select.setItemText(5, QCoreApplication.translate("MainWindow", u"E5:    10,0\u03a9", None))
-        self.main_scale_select.setItemText(6, QCoreApplication.translate("MainWindow", u"E6:     100\u03a9", None))
-        self.main_scale_select.setItemText(7, QCoreApplication.translate("MainWindow", u"E7:   1000\u03a9", None))
-        self.main_scale_select.setItemText(8, QCoreApplication.translate("MainWindow", u"E8: 10000\u03a9", None))
-
-        self.label_26.setText(QCoreApplication.translate("MainWindow", u"COMPENSA\u00c7\u00c3O:", None))
-        self.config_material_field.setItemText(0, QCoreApplication.translate("MainWindow", u"NENHUMA", None))
-        self.config_material_field.setItemText(1, QCoreApplication.translate("MainWindow", u"COBRE", None))
-        self.config_material_field.setItemText(2, QCoreApplication.translate("MainWindow", u"ALUMINIO", None))
-
-        self.label_27.setText(QCoreApplication.translate("MainWindow", u"TEMPERATURA", None))
-        self.setup_actual_temp_field.setText(QCoreApplication.translate("MainWindow", u"25 \u00baC", None))
-        self.main_home_button.setText("")
-        self.main_menu_button.setText("")
     # retranslateUi
 

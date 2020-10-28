@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
     <string notr="true">QFrame {
@@ -45,15 +48,15 @@ QPushButton{
     <widget class="QFrame" name="calib">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
+	background-image: url(:/main/bg_larger.png);
 };</string>
      </property>
      <property name="frameShape">
@@ -65,7 +68,7 @@ QPushButton{
      <widget class="QFrame" name="frame_14">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>106</x>
         <y>0</y>
         <width>811</width>
         <height>601</height>
@@ -1228,15 +1231,15 @@ border-radius: 15px;</string>
     <widget class="QFrame" name="comunication">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
+	background-image: url(:/main/bg_larger.png);
 };</string>
      </property>
      <property name="frameShape">
@@ -1248,10 +1251,10 @@ border-radius: 15px;</string>
      <widget class="QFrame" name="frame_13">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>212</x>
         <y>150</y>
-        <width>601</width>
-        <height>301</height>
+        <width>600</width>
+        <height>300</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1487,15 +1490,15 @@ border-radius: 15px;</string>
     <widget class="QFrame" name="config">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
+	background-image: url(:/main/bg_larger.png);
 };</string>
      </property>
      <property name="frameShape">
@@ -1507,10 +1510,10 @@ border-radius: 15px;</string>
      <widget class="QFrame" name="frame_7">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>80</y>
-        <width>721</width>
-        <height>431</height>
+        <x>152</x>
+        <y>85</y>
+        <width>720</width>
+        <height>430</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1991,15 +1994,15 @@ border-radius: 15px;</string>
     <widget class="QFrame" name="keyboard">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
+	background-image: url(:/main/bg_larger.png);
 };</string>
      </property>
      <property name="frameShape">
@@ -2011,10 +2014,10 @@ border-radius: 15px;</string>
      <widget class="QFrame" name="frame_15">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>50</y>
-        <width>661</width>
-        <height>481</height>
+        <x>182</x>
+        <y>60</y>
+        <width>660</width>
+        <height>480</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -2742,9 +2745,9 @@ border-radius: 15px;</string>
     <widget class="QFrame" name="main">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
@@ -2755,8 +2758,9 @@ border-radius: 15px;</string>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
-};</string>
+	background-image: url(:/main/bg_larger.png);
+	background-color:rgb(32, 32, 32);
+}</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -2767,7 +2771,7 @@ border-radius: 15px;</string>
      <widget class="QFrame" name="frame_2">
       <property name="geometry">
        <rect>
-        <x>130</x>
+        <x>320</x>
         <y>40</y>
         <width>581</width>
         <height>521</height>
@@ -3511,19 +3515,573 @@ border-radius: 15px;</string>
        </layout>
       </widget>
      </widget>
+     <widget class="QFrame" name="left_bar">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>200</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(44, 43, 43);</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>202</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>4</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+	background-color: rgb(143, 38, 38);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(143, 38, 38);
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: rgb(64, 64, 64);
+    background-color: rgb(32,32,32);
+}</string>
+          </property>
+          <widget class="QComboBox" name="main_scale_select">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>200</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+             <underline>false</underline>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+	margin-top: -5px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(143, 38, 38);
+	border: 1px solid  rgb(143, 38, 38);
+    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */
+}
+
+QComboBox::drop-down {
+    width: 150px;
+    border:0px; /* This seems to replace the whole arrow of the combo box */
+    margin-right:-200px;
+	 margin-left: -65px;
+}
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <property name="maxVisibleItems">
+            <number>9</number>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>AUTORANGE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E1: 1,00mΩ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E2: 10,0mΩ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E3:  100mΩ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E4:    1,00Ω</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E5:    10,0Ω</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E6:     100Ω</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E7:   1000Ω</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>E8: 10000Ω</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>200</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: rgb(32, 32, 32);/*rgb(143, 38, 38);*/
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(143, 38, 38);
+};</string>
+           </property>
+           <property name="text">
+            <string>ESCALA:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+	background-color: rgb(143, 38, 38);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(143, 38, 38);
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: rgb(64, 64, 64);
+    background-color: rgb(32,32,32);
+}</string>
+          </property>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>200</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: rgb(32, 32, 32);/*rgb(143, 38, 38);*/
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(143, 38, 38);
+};</string>
+           </property>
+           <property name="text">
+            <string>COMPENSAÇÃO:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="config_material_field">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>200</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+             <underline>false</underline>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+	margin-top: -5px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(143, 38, 38);
+	border: 1px solid  rgb(143, 38, 38);
+    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */
+}
+
+QComboBox::drop-down {
+    width: 150px;
+    border:0px; /* This seems to replace the whole arrow of the combo box */
+    margin-right:-200px;
+	 margin-left: -65px;
+}
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <property name="maxVisibleItems">
+            <number>9</number>
+           </property>
+           <property name="frame">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>NENHUMA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>COBRE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ALUMINIO</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+	background-color: rgb(143, 38, 38);
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(143, 38, 38);
+}</string>
+          </property>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>200</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: rgb(32, 32, 32);/*rgb(143, 38, 38);*/
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(143, 38, 38);
+};</string>
+           </property>
+           <property name="text">
+            <string>TEMPERATURA</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="setup_actual_temp_field">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>200</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	margin-top: -5px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(143, 38, 38);
+	border: 1px solid  rgb(143, 38, 38);
+    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */
+}</string>
+           </property>
+           <property name="text">
+            <string>25 ºC</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="main_menu_button">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources/src.qrc">
+            <normaloff>:/main/home_default.png</normaloff>
+            <disabledoff>:/main/home_disabled.png</disabledoff>
+            <selectedoff>:/main/home_selected.png</selectedoff>:/main/home_default.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
     <widget class="QFrame" name="menu">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
+	background-image: url(:/main/bg_larger.png);
 };</string>
      </property>
      <property name="frameShape">
@@ -3532,153 +4090,17 @@ border-radius: 15px;</string>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QWidget" name="horizontalLayoutWidget">
+     <widget class="QWidget" name="gridLayoutWidget_7">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>831</width>
-        <height>599</height>
+        <x>130</x>
+        <y>120</y>
+        <width>771</width>
+        <height>361</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QFrame" name="frame_3">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>150</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>200</width>
-           <height>150</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: #404040;
-border-radius: 15px;</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <widget class="QToolButton" name="menu_config_button">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>30</y>
-            <width>201</width>
-            <height>101</height>
-           </rect>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>20</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);</string>
-          </property>
-          <property name="text">
-           <string>Configuração</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources/src.qrc">
-            <normaloff>:/main/config.png</normaloff>:/main/config.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="toolButtonStyle">
-           <enum>Qt::ToolButtonTextUnderIcon</enum>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item>
-        <widget class="QFrame" name="frame_4">
-         <property name="minimumSize">
-          <size>
-           <width>200</width>
-           <height>150</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>200</width>
-           <height>150</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background: #404040;
-border-radius: 15px;</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <widget class="QToolButton" name="menu_com_button">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>30</y>
-            <width>201</width>
-            <height>101</height>
-           </rect>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>20</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);</string>
-          </property>
-          <property name="text">
-           <string>Comunicação</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources/src.qrc">
-            <normaloff>:/main/comunicacao.png</normaloff>:/main/comunicacao.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>60</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="toolButtonStyle">
-           <enum>Qt::ToolButtonTextUnderIcon</enum>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="2">
         <widget class="QFrame" name="frame_5">
          <property name="minimumSize">
           <size>
@@ -3746,21 +4168,198 @@ border-radius: 15px;</string>
          </widget>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frame_4">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #404040;
+border-radius: 15px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QToolButton" name="menu_com_button">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>30</y>
+            <width>201</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Comunicação</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources/src.qrc">
+            <normaloff>:/main/comunicacao.png</normaloff>:/main/comunicacao.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextUnderIcon</enum>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: #404040;
+border-radius: 15px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QToolButton" name="menu_config_button">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>30</y>
+            <width>201</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Configuração</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources/src.qrc">
+            <normaloff>:/main/config.png</normaloff>:/main/config.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextUnderIcon</enum>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="main_home_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>75</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>75</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>25</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #B5BD00;
+color: rgb(0,0,0);
+border: 1px solid #B5BD00;
+border-radius: 15px;</string>
+         </property>
+         <property name="text">
+          <string>VOLTAR</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
     </widget>
     <widget class="QFrame" name="setup">
      <property name="geometry">
       <rect>
-       <x>191</x>
+       <x>0</x>
        <y>0</y>
-       <width>833</width>
+       <width>1024</width>
        <height>600</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QFrame {
-	background-image: url(:/main/bg.png);
+	background-image: url(:/main/bg_larger.png);
 };</string>
      </property>
      <property name="frameShape">
@@ -3772,10 +4371,10 @@ border-radius: 15px;</string>
      <widget class="QFrame" name="frame_10">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>152</x>
         <y>60</y>
-        <width>721</width>
-        <height>481</height>
+        <width>720</width>
+        <height>480</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -4340,592 +4939,12 @@ border-radius: 15px;</string>
       </widget>
      </widget>
     </widget>
-    <widget class="QFrame" name="left_bar">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>190</width>
-       <height>600</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:rgb(44, 43, 43);
-border-color: none;</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QWidget" name="verticalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>191</width>
-        <height>601</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QWidget" name="widget" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>189</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>189</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QWidget{
-	background-color: rgb(143, 38, 38);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(143, 38, 38);
-}</string>
-         </property>
-         <widget class="QLabel" name="label_25">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>189</width>
-            <height>30</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>15</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-	background-color: rgb(143, 38, 38);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(143, 38, 38);
-}</string>
-          </property>
-          <property name="text">
-           <string>ESCALA:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-         <widget class="QComboBox" name="main_scale_select">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>30</y>
-            <width>189</width>
-            <height>30</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>189</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>189</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>20</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-            <underline>false</underline>
-            <kerning>true</kerning>
-           </font>
-          </property>
-          <property name="focusPolicy">
-           <enum>Qt::NoFocus</enum>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QComboBox {
-	margin-top: -5px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(143, 38, 38);
-	border: 1px solid  rgb(143, 38, 38);
-    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */
-}
-
-QComboBox::drop-down {
-    width: 150px;
-    border:0px; /* This seems to replace the whole arrow of the combo box */
-    margin-right:-200px;
-	 margin-left: -65px;
-}
-
-</string>
-          </property>
-          <property name="currentIndex">
-           <number>0</number>
-          </property>
-          <property name="maxVisibleItems">
-           <number>9</number>
-          </property>
-          <property name="frame">
-           <bool>false</bool>
-          </property>
-          <item>
-           <property name="text">
-            <string>AUTORANGE</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E1: 1,00mΩ</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E2: 10,0mΩ</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E3:  100mΩ</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E4:    1,00Ω</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E5:    10,0Ω</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E6:     100Ω</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E7:   1000Ω</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>E8: 10000Ω</string>
-           </property>
-          </item>
-         </widget>
-        </widget>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_2" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>189</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>189</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QWidget{
-	background-color: rgb(143, 38, 38);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(143, 38, 38);
-}</string>
-         </property>
-         <widget class="QLabel" name="label_26">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>189</width>
-            <height>30</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>15</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-	background-color: rgb(143, 38, 38);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(143, 38, 38);
-}</string>
-          </property>
-          <property name="text">
-           <string>COMPENSAÇÃO:</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-         <widget class="QComboBox" name="config_material_field">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>30</y>
-            <width>189</width>
-            <height>30</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>189</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>189</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>20</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-            <underline>false</underline>
-            <kerning>true</kerning>
-           </font>
-          </property>
-          <property name="focusPolicy">
-           <enum>Qt::NoFocus</enum>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QComboBox {
-	margin-top: -5px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(143, 38, 38);
-	border: 1px solid  rgb(143, 38, 38);
-    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */
-}
-
-QComboBox::drop-down {
-    width: 150px;
-    border:0px; /* This seems to replace the whole arrow of the combo box */
-    margin-right:-200px;
-	 margin-left: -65px;
-}
-
-</string>
-          </property>
-          <property name="currentIndex">
-           <number>0</number>
-          </property>
-          <property name="maxVisibleItems">
-           <number>9</number>
-          </property>
-          <property name="frame">
-           <bool>false</bool>
-          </property>
-          <item>
-           <property name="text">
-            <string>NENHUMA</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>COBRE</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>ALUMINIO</string>
-           </property>
-          </item>
-         </widget>
-        </widget>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_3" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>189</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>189</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QWidget{
-	background-color: rgb(143, 38, 38);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(143, 38, 38);
-}</string>
-         </property>
-         <widget class="QLabel" name="label_27">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>189</width>
-            <height>30</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>15</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLabel{
-	background-color: rgb(143, 38, 38);
-	color: rgb(255, 255, 255);
-	border: 1px solid rgb(143, 38, 38);
-}</string>
-          </property>
-          <property name="text">
-           <string>TEMPERATURA</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-         </widget>
-         <widget class="QPushButton" name="setup_actual_temp_field">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>30</y>
-            <width>189</width>
-            <height>30</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>189</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>189</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>20</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton {
-	margin-top: -5px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(143, 38, 38);
-	border: 1px solid  rgb(143, 38, 38);
-    padding: 0px 0px 1px 5px; /* This (useless) line resolves a bug with the font color */
-}</string>
-          </property>
-          <property name="text">
-           <string>25 ºC</string>
-          </property>
-         </widget>
-        </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_5">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="main_home_button">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>60</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton:hover:!pressed
-{
-
-}</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normalon>:/main/inicio_default.png</normalon>
-           <disabledon>:/main/inicio_disabled.png</disabledon>
-           <selectedon>:/main/inicio_selected.png</selectedon>
-          </iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>60</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-         <property name="flat">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="main_menu_button">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>60</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="resources/src.qrc">
-           <normaloff>:/main/home_default.png</normaloff>
-           <disabledoff>:/main/home_disabled.png</disabledoff>
-           <selectedoff>:/main/home_selected.png</selectedoff>:/main/home_default.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>60</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-         <property name="checked">
-          <bool>false</bool>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-         <property name="flat">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <zorder>menu</zorder>
-    <zorder>left_bar</zorder>
-    <zorder>keyboard</zorder>
     <zorder>calib</zorder>
     <zorder>comunication</zorder>
-    <zorder>config</zorder>
+    <zorder>keyboard</zorder>
     <zorder>setup</zorder>
+    <zorder>config</zorder>
+    <zorder>menu</zorder>
     <zorder>main</zorder>
    </widget>
   </widget>
@@ -4934,38 +4953,6 @@ QComboBox::drop-down {
   <include location="resources/src.qrc"/>
  </resources>
  <connections>
-  <connection>
-   <sender>main_home_button</sender>
-   <signal>clicked()</signal>
-   <receiver>main</receiver>
-   <slot>raise()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>94</x>
-     <y>131</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>607</x>
-     <y>299</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>main_menu_button</sender>
-   <signal>clicked()</signal>
-   <receiver>menu</receiver>
-   <slot>raise()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>94</x>
-     <y>298</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>607</x>
-     <y>299</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>menu_config_button</sender>
    <signal>clicked()</signal>
@@ -5058,6 +5045,38 @@ QComboBox::drop-down {
     </hint>
     <hint type="destinationlabel">
      <x>607</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>main_home_button</sender>
+   <signal>clicked()</signal>
+   <receiver>main</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>870</x>
+     <y>467</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>607</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>main_menu_button</sender>
+   <signal>clicked()</signal>
+   <receiver>menu</receiver>
+   <slot>raise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
      <y>299</y>
     </hint>
    </hints>

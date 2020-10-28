@@ -2043,86 +2043,45 @@ border-radius: 15px;</string>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item alignment="Qt::AlignHCenter">
-         <widget class="QPlainTextEdit" name="keyboard_field">
-          <property name="minimumSize">
-           <size>
-            <width>541</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>541</width>
-            <height>75</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>40</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;
-padding-left: 15px;</string>
-          </property>
-          <property name="verticalScrollBarPolicy">
-           <enum>Qt::ScrollBarAlwaysOff</enum>
-          </property>
-          <property name="horizontalScrollBarPolicy">
-           <enum>Qt::ScrollBarAlwaysOff</enum>
-          </property>
-          <property name="plainText">
-           <string/>
-          </property>
-         </widget>
-        </item>
         <item>
-         <layout class="QGridLayout" name="gridLayout_4">
-          <item row="0" column="3">
-           <widget class="QPushButton" name="keyboard_micro">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <widget class="QPlainTextEdit" name="keyboard_field">
             <property name="minimumSize">
              <size>
-              <width>120</width>
-              <height>75</height>
+              <width>400</width>
+              <height>0</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>120</width>
+              <width>400</width>
               <height>75</height>
              </size>
             </property>
             <property name="font">
              <font>
-              <pointsize>25</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
+              <pointsize>40</pointsize>
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #292929;
-color: #B5BD00;
-border: 1px solid #292929;
-border-radius: 15px;</string>
+             <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;
+padding-left: 15px;</string>
             </property>
-            <property name="text">
-             <string>uΩ</string>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
             </property>
-            <property name="iconSize">
-             <size>
-              <width>25</width>
-              <height>25</height>
-             </size>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="plainText">
+             <string/>
             </property>
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="keyboard_8">
+           <widget class="QPushButton" name="keyboard_del">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2152,7 +2111,7 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>8</string>
+             <string>DEL</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2162,8 +2121,12 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QPushButton" name="keyboard_5">
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="2">
+           <widget class="QPushButton" name="keyboard_9">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2193,7 +2156,89 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>5</string>
+             <string>9</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="keyboard_4">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>25</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #292929;
+color: #B5BD00;
+border: 1px solid #292929;
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string>4</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="keyboard_enter">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>25</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #292929;
+color: #B5BD00;
+border: 1px solid #292929;
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string>ENTER</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2244,8 +2289,8 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
-           <widget class="QPushButton" name="keyboard_0">
+          <item row="1" column="1">
+           <widget class="QPushButton" name="keyboard_5">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2275,7 +2320,48 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>0</string>
+             <string>5</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="keyboard_8">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>25</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #292929;
+color: #B5BD00;
+border: 1px solid #292929;
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string>8</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2326,6 +2412,88 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="keyboard_micro">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>25</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #292929;
+color: #B5BD00;
+border: 1px solid #292929;
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string>uΩ</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="keyboard_7">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>75</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>25</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #292929;
+color: #B5BD00;
+border: 1px solid #292929;
+border-radius: 15px;</string>
+            </property>
+            <property name="text">
+             <string>7</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
           <item row="1" column="2">
            <widget class="QPushButton" name="keyboard_6">
             <property name="enabled">
@@ -2367,8 +2535,8 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
-           <widget class="QPushButton" name="keyboard_dot">
+          <item row="2" column="2">
+           <widget class="QPushButton" name="keyboard_3">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2398,7 +2566,7 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>.</string>
+             <string>3</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2408,8 +2576,8 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="2">
-           <widget class="QPushButton" name="keyboard_9">
+          <item row="2" column="0">
+           <widget class="QPushButton" name="keyboard_1">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2439,7 +2607,7 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>9</string>
+             <string>1</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2491,13 +2659,13 @@ border-radius: 15px;</string>
            </widget>
           </item>
           <item row="3" column="2">
-           <widget class="QPushButton" name="keyboard_del">
+           <widget class="QPushButton" name="keyboard_minus">
             <property name="enabled">
              <bool>true</bool>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
+              <width>120</width>
               <height>75</height>
              </size>
             </property>
@@ -2521,7 +2689,7 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>DEL</string>
+             <string>-</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2531,8 +2699,8 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
-           <widget class="QPushButton" name="keyboard_3">
+          <item row="3" column="0">
+           <widget class="QPushButton" name="keyboard_dot">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2562,7 +2730,7 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>3</string>
+             <string>.</string>
             </property>
             <property name="iconSize">
              <size>
@@ -2572,8 +2740,8 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="3">
-           <widget class="QPushButton" name="keyboard_enter">
+          <item row="3" column="1">
+           <widget class="QPushButton" name="keyboard_0">
             <property name="enabled">
              <bool>true</bool>
             </property>
@@ -2603,130 +2771,7 @@ border: 1px solid #292929;
 border-radius: 15px;</string>
             </property>
             <property name="text">
-             <string>ENTER</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>25</width>
-              <height>25</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QPushButton" name="keyboard_4">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>75</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>75</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>25</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: #292929;
-color: #B5BD00;
-border: 1px solid #292929;
-border-radius: 15px;</string>
-            </property>
-            <property name="text">
-             <string>4</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>25</width>
-              <height>25</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QPushButton" name="keyboard_1">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>75</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>75</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>25</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: #292929;
-color: #B5BD00;
-border: 1px solid #292929;
-border-radius: 15px;</string>
-            </property>
-            <property name="text">
-             <string>1</string>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>25</width>
-              <height>25</height>
-             </size>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QPushButton" name="keyboard_7">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>120</width>
-              <height>75</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>120</width>
-              <height>75</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>25</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: #292929;
-color: #B5BD00;
-border: 1px solid #292929;
-border-radius: 15px;</string>
-            </property>
-            <property name="text">
-             <string>7</string>
+             <string>0</string>
             </property>
             <property name="iconSize">
              <size>
@@ -4941,10 +4986,10 @@ border-radius: 15px;</string>
     </widget>
     <zorder>calib</zorder>
     <zorder>comunication</zorder>
-    <zorder>keyboard</zorder>
     <zorder>setup</zorder>
     <zorder>config</zorder>
     <zorder>menu</zorder>
+    <zorder>keyboard</zorder>
     <zorder>main</zorder>
    </widget>
   </widget>
